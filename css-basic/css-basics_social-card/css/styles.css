@@ -1,3 +1,24 @@
 * {
-  box-sizing: border-box;
+  border-radius: 25px;
+}
+img {
+  border-radius: 25px;
+}
+button {
+  border: none;
+  color: rgb(108, 160, 239);
+  background: none;
+}
+h2 {
+  text-transform: uppercase;
+  font-family: "Trebuchet MS";
+}
+#fontbold {
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium";
+}
+#account {
+  font-family: "Lucida Sans";
+  color: rgb(252, 243, 243);
+  font-weight: 100;
 }
