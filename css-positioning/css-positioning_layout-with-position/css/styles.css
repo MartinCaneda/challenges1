@@ -94,8 +94,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 10px;
-  bottom: 10px;
-  position: fixed;
-  z-index: 99999;
-}
+
+=======
+  position: sticky;
+  bottom: 0;
+  left: 0;
