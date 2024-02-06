@@ -43,7 +43,6 @@ body {
 .tech-stack__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
   list-style: none;
