@@ -11,6 +11,12 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const theTitle = "Yellow Press";
+const theText = "Omg";
+let likesNumber = 3;
+const theCreator = "Not me";
+const isReported = false;
+
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +24,15 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+
+console.log("theTitle", theTitle);
+console.log("theText", theText);
+console.log("likesNumber", likesNumber);
+console.log("theCreator", theCreator);
+console.log("isReported", isReported);
+
+likesNumber++;
+
+console.log("likesNumber", likesNumber);
 
 // --^-- write your code here --^--
