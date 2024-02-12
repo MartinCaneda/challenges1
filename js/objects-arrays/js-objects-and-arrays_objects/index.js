@@ -4,8 +4,11 @@ console.clear();
 // Create an object personWithNameAgeEmail with the properties "name", "age" and "email".
 
 const personWithNameAgeEmail = {
-  example: "example",
+  name: "martin",
+  age: 33,
+  email: "email@email.com",
 };
+personWithNameAgeEmail;
 
 // EXERCISE 2
 // Set the values of name and age equal to the corresponding values of the personAlex object.
@@ -15,8 +18,13 @@ const personAlex = {
   age: 24,
 };
 
-const nameOfAlex = "Change me";
-const ageOfAlex = "Change me";
+let nameOfAlex = "Change me";
+let ageOfAlex = "Change me";
+
+nameOfAlex = personAlex.name;
+nameOfAlex;
+ageOfAlex = personAlex.age;
+ageOfAlex;
 
 // EXERCISE 3
 // Change the value of name to "Alex" and the value of age to "35" by updating the object personToChange: person.existingProperty = newValue.
@@ -25,6 +33,9 @@ const personToChange = {
   name: "Kim",
   age: 24,
 };
+personToChange.name = "Alex";
+personToChange.age = 35;
+personToChange;
 
 // EXERCISE 4
 // Add the properties age "5" and breed "husky" to the object petPluto: pet.newProperty = newValue.
@@ -33,6 +44,10 @@ const petPluto = {
   name: "Pluto",
   species: "dog",
 };
+
+petPluto.age = 5;
+petPluto.breed = "husky";
+petPluto;
 
 export {
   personWithNameAgeEmail,
