@@ -27,4 +27,4 @@ console.log(hacking);
 console.clear();
 console.log(hacking);
 let error = "This is an error!";
-console.log(error);
+console.error(error);
