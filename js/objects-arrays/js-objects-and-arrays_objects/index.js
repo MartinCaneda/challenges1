@@ -18,13 +18,8 @@ const personAlex = {
   age: 24,
 };
 
-let nameOfAlex = "Change me";
-let ageOfAlex = "Change me";
-
-nameOfAlex = personAlex.name;
-nameOfAlex;
-ageOfAlex = personAlex.age;
-ageOfAlex;
+let nameOfAlex = personAlex.name;
+let ageOfAlex = personAlex.age;
 
 // EXERCISE 3
 // Change the value of name to "Alex" and the value of age to "35" by updating the object personToChange: person.existingProperty = newValue.
