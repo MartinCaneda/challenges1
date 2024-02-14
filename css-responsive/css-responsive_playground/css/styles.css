@@ -71,11 +71,11 @@ h1 {
 
   width: 100px;
   height: 100px;
-  @media (min-width:600px ) {
+  @media (min-width:599px ) {
     width: 200px;
     }
   @media (min-width: 1199px) {
-    width: 599px;
+    width: 400px;
   }
 }
 
@@ -85,7 +85,7 @@ h1 {
   width: 50px;
   height: 250px;
   @media screen (orientation: landscape) {
-    height: 0px;
+    rotate: 90deg;
   }
 }
 
@@ -100,7 +100,7 @@ h1 {
 
 .box--five {
   width: 100%;
-  @media screen {
+  @media screen (min-width: 599px){
     
   }
 }
