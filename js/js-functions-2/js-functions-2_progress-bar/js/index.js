@@ -25,9 +25,9 @@ function calculateScrollPercentage() {
   var yAxis = window.scrollY;
   var wHeight = window.innerHeight;
   var webPageHeight = document.body.clientHeight;
-  if (webPageHeight === 0) {
+  /*   if (webPageHeight === 0) {
     return 0;
-  }
+  } */
   const scrollPercentage = (yAxis / (webPageHeight - wHeight)) * 100;
   return scrollPercentage + "%";
 }
