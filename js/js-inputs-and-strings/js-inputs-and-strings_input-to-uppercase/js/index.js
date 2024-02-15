@@ -16,8 +16,6 @@ element
 const firstInput = document.querySelector('[data-js="first-input"]');
 const buttonInput = document.querySelector('[data-js="button-uppercase"]');
 
-firstInput.addEventListener("input", () => {
-  const oldInput = firstInput.value;
-  const newInput = oldInput.toUpperCase();
-  firstInput.value = newInput;
+buttonInput.addEventListener("click", () => {
+  firstInput.value = firstInput.value.toUpperCase();
 });
