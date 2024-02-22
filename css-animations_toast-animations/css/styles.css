@@ -21,6 +21,8 @@ body {
   border: none;
   font-size: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: opacity 500ms ease-in-out 1s,
+    background-color 500ms ease-in-out 1s;
 }
 
 .start-button:hover {
