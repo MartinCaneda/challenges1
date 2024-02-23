@@ -1,23 +1,34 @@
 console.clear();
 
+import { getRandomColor } from "./utils/randomColor.js";
+import { Circle } from "./components/Circle/Circle.js";
+
 const root = document.getElementById("root");
 
-const circle = document.createElement("div");
-circle.classList.add("circle");
-circle.addEventListener("click", () => {
-  circle.style.backgroundColor = "#ccc";
-});
+/* function Circle() {
+  const circle = document.createElement("div");
+  circle.classList.add("circle");
+  circle.addEventListener("click", () => {
+    const newColor = getRandomColor();
+    circle.style.backgroundColor = newColor;
+  });
+  return circle;
+} */
+
+const circleElement = Circle();
 
 const square = document.createElement("div");
 square.classList.add("square");
 square.addEventListener("click", () => {
-  square.style.backgroundColor = "#ccc";
+  const newColor = getRandomColor();
+  square.style.backgroundColor = newColor;
 });
 
 const pentagon = document.createElement("div");
 pentagon.classList.add("pentagon");
 pentagon.addEventListener("click", () => {
-  pentagon.style.backgroundColor = "#ccc";
+  const newColor = getRandomColor();
+  pentagon.style.backgroundColor = newColor;
 });
 
-root.append(circle, square, pentagon);
+root.append(circleElement, square, pentagon);
