@@ -37,7 +37,6 @@ const body = document.body;
 // --v-- code here --v--
 
 button3.addEventListener("click", async () => {
-  body.classList.add("dark");
   icon.textContent = "💤";
   await sleep(3);
   icon.textContent = "⏰";
@@ -45,7 +44,6 @@ button3.addEventListener("click", async () => {
 });
 
 button5.addEventListener("click", async () => {
-  body.classList.add("dark");
   icon.textContent = "💤";
   await sleep(5);
   icon.textContent = "⏰";
@@ -53,7 +51,6 @@ button5.addEventListener("click", async () => {
 });
 
 async function handleSleepFor10Button() {
-  body.classList.add("dark");
   icon.textContent = "💤";
   await sleep(10);
   icon.textContent = "⏰";
@@ -68,6 +65,7 @@ button10.addEventListener("click", handleSleepFor10Button);
 function sleep(seconds) {
   const sleepPromise = new Promise((resolve) => {
     setTimeout(() => resolve(), seconds * 1000);
+    body.classList.add("dark");
   });
   return sleepPromise;
 }
