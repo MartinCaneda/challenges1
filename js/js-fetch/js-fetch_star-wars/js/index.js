@@ -32,8 +32,27 @@ const EXAMPLE_DATA = {
   edited: "2014-12-20T21:17:56.891000Z",
   url: "https://swapi.dev/api/people/1/",
 };
+/* ### Task 1: Fetch data from the Star Wars Api:
 
+Fetch data from the star wars api (https://swapi.dev/api/people).
+
+Use the `async` and `await` keywords to receive the response and 
+request the data with the `.json() method`.
+Use a `console.log()` to look at the received data!
+
+### Task 2: Moooooooooore cards!
+
+Use an array method to create and render a card for each 
+object in the fetched data array.
+
+The following hints may guide you:
+
+- What was the array method again to perform an action 
+**for each** element?
+- You can use the functions `Card()` and `renderElement()` 
+to create those cards, see the explanation above! */
 // Create dom element for a card and append it to the root
+
 const firstCard = Card(EXAMPLE_DATA);
 renderElement(firstCard);
 
@@ -41,6 +60,17 @@ fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender() {
+  try {
+    const response = await fetch("https://swapi.dev/api/people");
+
+    const info = await response.json();
+
+    info.results.forEach((cardInfo) => {
+      const createdCard = Card(cardInfo);
+      renderElement(createdCard);
+    });
+  } catch (error) {
+    console.error(error);
+  }
 }
