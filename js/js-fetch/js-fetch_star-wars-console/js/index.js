@@ -34,14 +34,12 @@ const url = "https://swapi.dev/api/people";
 async function fetchData() {
   try {
     const response = await fetch(url);
-    console.log(response);
 
-    if (!response.ok) {
-      console.error("nope");
-      return;
-    }
+    const data = await response.json();
+    console.log(data);
+    console.log(data.results[2].eye_color);
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 }
 
