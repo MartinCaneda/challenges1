@@ -1,7 +1,7 @@
 {
-  "name": "js-fetch_star-wars-console",
+  "name": "js-fetch_color-clue",
   "version": "0.0.0-unreleased",
-  "description": "Fetch Star Wars API and log data to console",
+  "description": "Color Clue Challenge for JS Fetch Session",
   "main": "index.html",
   "scripts": {
     "lint": "npx -y eslint@latest .",
