@@ -26,7 +26,9 @@
       <form data-js="form">
         <fieldset>
           <legend>Personal Information</legend>
-          <label for="first-name">First Name</label>
+          <label for="first-name" minlength="4" maxlength="30" required
+            >First Name</label
+          >
           <input
             type="text"
             name="firstName"
@@ -34,7 +36,9 @@
             placeholder="Your first name"
           />
 
-          <label for="last-name">Last Name</label>
+          <label for="last-name" minlength="4" maxlength="30" required
+            >Last Name</label
+          >
           <input
             type="text"
             name="lastName"
@@ -42,10 +46,10 @@
             placeholder="Your last name"
           />
 
-          <label for="age">Age</label>
+          <label for="age" min="14">Age</label>
           <input type="number" name="age" id="age" />
 
-          <label for="email">Email</label>
+          <label for="email" type="email">Email</label>
           <input type="text" name="email" id="email" />
         </fieldset>
 
@@ -90,6 +94,7 @@
               type="checkbox"
               name="terms-of-service"
               id="terms-of-service"
+              required
             />
             I have read the terms of service and agree to sell my soul
             <a
