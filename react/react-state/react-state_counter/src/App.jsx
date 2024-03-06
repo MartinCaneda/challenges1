@@ -1,26 +1,17 @@
 import "./App.css";
+import { useState } from "react";
 
 export default function App() {
-  let count = 0;
+  const [counter, setCounter] = useState(0);
 
   return (
     <div className="container">
-      <h1>{count}</h1>
+      <h1>{counter}</h1>
       <div className="button-container">
-        <button
-          type="button"
-          onClick={() => {
-            console.log("🤔");
-          }}
-        >
+        <button type="button" onClick={() => setCounter(counter - 1)}>
           -
         </button>
-        <button
-          type="button"
-          onClick={() => {
-            console.log("🤔");
-          }}
-        >
+        <button type="button" onClick={() => setCounter(counter + 1)}>
           +
         </button>
       </div>
