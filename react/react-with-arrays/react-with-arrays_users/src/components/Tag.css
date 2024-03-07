@@ -7,4 +7,5 @@
 
 .tag--highlight {
   color: var(--accent);
+  background: var(--black);
 }
