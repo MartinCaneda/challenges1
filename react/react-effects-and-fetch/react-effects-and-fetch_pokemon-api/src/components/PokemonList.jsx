@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./PokemonList.css";
-
 
 export default function PokemonList() {
   const [pokemon, setPokemon] = useState([]);
@@ -14,15 +13,19 @@ export default function PokemonList() {
       console.log(error);
     }
   }
-
+  useEffect(() => {
+    loadPokemon();
+  }, []);
   return (
     <main>
-      <button type="button" className="button" onClick={loadPokemon}>
+      {/*       <button type="button" className="button" onClick={loadPokemon}>
         Load Pokémon
-      </button>
+      </button> */}
       <ul>
         {pokemon.map(({ name }) => (
-          <li key={name} className="pokemon">{name}</li>
+          <li key={name} className="pokemon">
+            {name}
+          </li>
         ))}
       </ul>
     </main>
